@@ -15,7 +15,7 @@ class PostAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
     search_fields = ['title']
-    list_display = ('title')
+    list_display = ('title',)
 
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'post', 'created_at')    
