@@ -18,7 +18,7 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ('title',)
 
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ('name', 'post', 'created_at')    
+    list_display = ('name', 'post', 'created_at',)    
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Post, PostAdmin)
